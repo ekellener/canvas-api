@@ -5,7 +5,7 @@ const dotenv = require('dotenv').config();
 // Test if runtime env, or .env file variables have been assigned. If not, exit
 if( process.env.CANVAS_API_VERSION === undefined || process.env.CANVAS_API_KEY === undefined  || process.env.CANVAS_API_KEY === undefined ){
   console.log('Missing Version, API Key or Domain  in .env file or runtime environment variables');
-  process.exit();
+  process.exit(1);
   
   }
 
